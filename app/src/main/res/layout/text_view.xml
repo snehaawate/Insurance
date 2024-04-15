@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_height"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/md_keylines"
+    android:layout_marginLeft="@dimen/md_keylines"
+    android:layout_marginRight="@dimen/md_keylines"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_title_height"
+            android:layout_marginLeft="@dimen/md_keylines"
+            tools:text="@string/item_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/share_button"
+            android:layout_width="@dimen/cards_button_width"
+            android:layout_height="@dimen/cards_button_height"
+            android:layout_marginRight="@dimen/md_keylines"
+            android:layout_marginTop="180dp"
+            app:srcCompat="@drawable/baseline_add_shopping_cart_24"
+            android:layout_below="@+id/card_title"
+            style="?android:attr/borderlessButtonStyle"
+            android:tint="@color/button_grey" />
+
+        <Button
+            android:id="@+id/action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_below="@+id/card_title"
+            android:layout_toRightOf="@id/share_button"
+            android:layout_marginRight="@dimen/md_keylines"
+            android:layout_marginTop="180dp"
+            android:textColor="@color/black"
+            android:text="Buy Now" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+    <!--android:layout_alignBottom="@+id/card_view"-->
+
+    <!--<TextView android:id="@+id/text_view_id"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        xmlns:android="http://schemas.android.com/apk/res/android" />-->
+
+    <!--android:text="@string/hello"-->
+    <!--android:layout_height="wrap_content"
+    android:layout_width="wrap_content"-->
